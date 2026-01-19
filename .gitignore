@@ -1,0 +1,21 @@
+# ---- Python ----
+venv/
+VoiceGaurd/
+__pycache__/
+*.pyc
+
+# ---- Datasets (VERY IMPORTANT) ----
+data/
+test-clean/
+LibriSpeech/
+*.wav
+*.flac
+*.tar.gz
+
+# ---- Node / React ----
+node_modules/
+build/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
