@@ -9,13 +9,10 @@ function App() {
 
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
+  const API_URL = "https://voiceguard-ai-77q3.onrender.com/predict";
 
-  const API_URL =
-  process.env.NODE_ENV === "development"
-    ? "http://127.0.0.1:8000/predict"
-    : "https://your-render-url.onrender.com/predict";
- // change later for prod
 
+ 
   const analyzeVoice = async () => {
     if (!file) return alert("Upload or record audio first");
 
